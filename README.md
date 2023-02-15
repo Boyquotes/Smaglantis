@@ -14,3 +14,10 @@ Smaglantis is an indie open world, action/RPG game currently being developed in 
 
 
 Developed a prototype character creator menu before the game starts and plan to add more customization options and a female protagonist option. 
+
+## Gameplay
+
+<p align="center">
+  <img src="Gameplay.gif"/>
+</p>
+
