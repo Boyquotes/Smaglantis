@@ -1,0 +1,60 @@
+{
+  "Steel Sword": {
+    "ItemCategory": "Sword",
+    "ItemAttack": 5,
+    "StackSize": 1,
+    "Description": "A sturdy sword that will be effective in combat."
+  },
+  "Healing Potion": {
+    "ItemCategory": "Consumable",
+    "AddHealth": 5,
+    "StackSize": 99,
+    "Description": "A potion that will heal 20 HP."
+  },
+  "Iron Sword": {
+    "ItemCategory": "Sword",
+    "ItemAttack": 3,
+    "StackSize": 1,
+    "Description": "A simple sword that will get the job done."
+  },
+  "Blue Jacket": {
+    "ItemCategory": "Shirt",
+    "StackSize": 1,
+    "Description": "A casual blue jacket."
+  },
+  "Black Jeans": {
+    "ItemCategory": "Pants",
+    "StackSize": 1,
+    "Description": "Just your ordinary black jeans."
+  },
+  "Blue Shoes": {
+    "ItemCategory": "Shoes",
+    "StackSize": 1,
+    "Description": "Fresh pair of blue shoes."
+  },
+  "Black Shirt": {
+    "ItemCategory": "Shirt",
+    "StackSize": 1,
+    "Description": "A casual blue jacket."
+  },
+  "Black Shoes": {
+    "ItemCategory": "Shoes",
+    "StackSize": 1,
+    "Description": "Fresh pair of black shoes."
+  },
+  "Red Shirt": {
+    "ItemCategory": "Shirt",
+    "StackSize": 1,
+    "Description": "A casual red shirt."
+  },
+  "Blue Jeans": {
+    "ItemCategory": "Pants",
+    "StackSize": 1,
+    "Description": "Just your ordinary blue jeans."
+  },
+  "Red Shoes": {
+    "ItemCategory": "Shoes",
+    "StackSize": 1,
+    "Description": "Fresh pair of red shoes."
+  }
+}

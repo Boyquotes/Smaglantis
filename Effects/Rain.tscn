@@ -1,0 +1,32 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Effects/rain_drop.png" type="Texture" id=1]
+[ext_resource path="res://Effects/Rain.gd" type="Script" id=2]
+[ext_resource path="res://Sound Effects/Rain.wav" type="AudioStream" id=3]
+
+[sub_resource type="ParticlesMaterial" id=1]
+render_priority = 1
+emission_shape = 2
+emission_box_extents = Vector3( 300, 100, 1 )
+flag_align_y = true
+flag_disable_z = true
+gravity = Vector3( 30, 98, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 0.6
+scale_random = 0.8
+
+[node name="Rain" type="Particles2D"]
+modulate = Color( 1, 1, 1, 0.501961 )
+position = Vector2( 144.163, 2.00227 )
+z_index = 8
+amount = 200
+lifetime = 2.0
+speed_scale = 1.6
+process_material = SubResource( 1 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 3 )
+volume_db = 10.722

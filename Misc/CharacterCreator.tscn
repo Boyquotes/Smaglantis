@@ -1,0 +1,717 @@
+[gd_scene load_steps=45 format=2]
+
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player/PlayerCustomization.gd" type="Script" id=2]
+[ext_resource path="res://UI/Player Creator.png" type="Texture" id=3]
+[ext_resource path="res://Fonts/SuperLegendBoy-4w8Y.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://UI/Arrow.png" type="Texture" id=5]
+[ext_resource path="res://UI/Arrow2.png" type="Texture" id=6]
+[ext_resource path="res://UI/Dice.png" type="Texture" id=7]
+[ext_resource path="res://UI/Blue Background.png" type="Texture" id=8]
+[ext_resource path="res://UI/Button.png" type="Texture" id=9]
+[ext_resource path="res://UI/Button 2.png" type="Texture" id=10]
+
+[sub_resource type="DynamicFont" id=1]
+size = 7
+font_data = ExtResource( 4 )
+
+[sub_resource type="GDScript" id=2]
+
+[sub_resource type="DynamicFont" id=5]
+size = 8
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=4]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxEmpty" id=7]
+
+[sub_resource type="StyleBoxEmpty" id=8]
+
+[sub_resource type="StyleBoxEmpty" id=9]
+
+[sub_resource type="StyleBoxEmpty" id=10]
+
+[sub_resource type="StyleBoxEmpty" id=11]
+
+[sub_resource type="StyleBoxEmpty" id=12]
+
+[sub_resource type="StyleBoxEmpty" id=13]
+
+[sub_resource type="StyleBoxEmpty" id=14]
+
+[sub_resource type="DynamicFont" id=16]
+size = 7
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxEmpty" id=15]
+
+[sub_resource type="DynamicFont" id=18]
+size = 9
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxEmpty" id=17]
+
+[sub_resource type="DynamicFont" id=19]
+size = 7
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=20]
+size = 7
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=21]
+size = 7
+font_data = ExtResource( 4 )
+
+[sub_resource type="StyleBoxEmpty" id=22]
+
+[sub_resource type="StyleBoxEmpty" id=23]
+
+[sub_resource type="StyleBoxEmpty" id=24]
+
+[sub_resource type="StyleBoxEmpty" id=25]
+
+[sub_resource type="StyleBoxEmpty" id=26]
+
+[sub_resource type="StyleBoxEmpty" id=27]
+
+[sub_resource type="StyleBoxEmpty" id=28]
+
+[sub_resource type="StyleBoxEmpty" id=29]
+
+[sub_resource type="StyleBoxEmpty" id=30]
+
+[sub_resource type="StyleBoxEmpty" id=31]
+
+[sub_resource type="StyleBoxEmpty" id=32]
+
+[sub_resource type="StyleBoxEmpty" id=33]
+
+[sub_resource type="StyleBoxEmpty" id=34]
+
+[node name="CharacterCreator" type="Node2D"]
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 161, 93 )
+scale = Vector2( 0.254687, 0.259722 )
+texture = ExtResource( 8 )
+
+[node name="CustomizationBackground" type="Sprite" parent="."]
+position = Vector2( 166, 87 )
+scale = Vector2( 1.6, 1.69055 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_editor_description_": "Name"
+}
+
+[node name="PlayerBorder" type="Sprite" parent="."]
+position = Vector2( 127, 43 )
+scale = Vector2( 0.36, 0.45 )
+texture = ExtResource( 3 )
+
+[node name="NameBorder" type="Sprite" parent="."]
+position = Vector2( 191, 44 )
+scale = Vector2( 1.46667, 1.1 )
+texture = ExtResource( 10 )
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( 126, 42 )
+script = ExtResource( 2 )
+
+[node name="NameText" type="RichTextLabel" parent="Player"]
+margin_left = 52.0
+margin_top = -20.0
+margin_right = 83.0
+margin_bottom = -9.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+text = "Name"
+script = SubResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="EnterName" type="LineEdit" parent="Player"]
+margin_left = 25.0
+margin_top = -7.0
+margin_right = 106.0
+margin_bottom = 13.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 5 )
+custom_styles/focus = SubResource( 3 )
+custom_styles/normal = SubResource( 4 )
+align = 1
+max_length = 12
+context_menu_enabled = false
+shortcut_keys_enabled = false
+caret_blink = true
+caret_blink_speed = 0.5
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 161, 92 )
+
+[node name="ChangeHair" type="Button" parent="."]
+margin_left = 137.0
+margin_top = 86.0
+margin_right = 149.0
+margin_bottom = 115.0
+rect_scale = Vector2( 1, 0.384 )
+custom_styles/hover = SubResource( 6 )
+custom_styles/focus = SubResource( 7 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChangeEyes" type="Button" parent="."]
+margin_left = 208.0
+margin_top = 74.0
+margin_right = 220.0
+margin_bottom = 104.0
+rect_scale = Vector2( 1, 0.335 )
+custom_styles/focus = SubResource( 8 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChangeShirt" type="Button" parent="."]
+margin_left = 138.0
+margin_top = 100.0
+margin_right = 150.0
+margin_bottom = 134.0
+rect_scale = Vector2( 1, 0.298 )
+custom_styles/focus = SubResource( 9 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChangePants" type="Button" parent="."]
+margin_left = 140.0
+margin_top = 113.0
+margin_right = 152.0
+margin_bottom = 150.0
+rect_scale = Vector2( 1, 0.27 )
+custom_styles/focus = SubResource( 10 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChangeShoes" type="Button" parent="."]
+margin_left = 140.0
+margin_top = 125.0
+margin_right = 152.0
+margin_bottom = 155.0
+rect_scale = Vector2( 0.977, 0.378 )
+custom_styles/focus = SubResource( 11 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChangeFacHair" type="Button" parent="."]
+margin_left = 142.0
+margin_top = 139.0
+margin_right = 154.0
+margin_bottom = 173.0
+rect_scale = Vector2( 1, 0.293 )
+custom_styles/focus = SubResource( 12 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChangeAcc" type="Button" parent="."]
+margin_left = 208.0
+margin_top = 87.0
+margin_right = 220.0
+margin_bottom = 128.0
+rect_scale = Vector2( 1, 0.245 )
+custom_styles/focus = SubResource( 13 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RandomButton" type="Button" parent="."]
+margin_left = 99.0
+margin_top = 15.0
+margin_right = 111.0
+margin_bottom = 35.0
+rect_scale = Vector2( 0.595, 0.375 )
+custom_styles/focus = SubResource( 14 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ConfirmBorder" type="Sprite" parent="."]
+position = Vector2( 221, 148 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 9 )
+
+[node name="ConfirmButton" type="Button" parent="."]
+margin_left = 214.0
+margin_top = 142.0
+margin_right = 238.0
+margin_bottom = 157.0
+rect_scale = Vector2( 0.645, 1 )
+custom_colors/font_color = Color( 0.298039, 0.854902, 0.388235, 1 )
+custom_fonts/font = SubResource( 16 )
+custom_styles/focus = SubResource( 15 )
+text = "Ok"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackBorder" type="Sprite" parent="."]
+position = Vector2( 284, 153 )
+scale = Vector2( 0.933333, 1.3 )
+texture = ExtResource( 10 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 263.0
+margin_top = 144.0
+margin_right = 305.0
+margin_bottom = 164.0
+custom_colors/font_color = Color( 0.933333, 0.0431373, 0.0431373, 1 )
+custom_fonts/font = SubResource( 18 )
+custom_styles/focus = SubResource( 17 )
+text = "Back"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SkinColorText" type="RichTextLabel" parent="."]
+margin_left = 112.0
+margin_top = 75.0
+margin_right = 135.0
+margin_bottom = 86.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 19 )
+meta_underlined = false
+text = "Skin"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HairText" type="RichTextLabel" parent="."]
+margin_left = 113.0
+margin_top = 87.0
+margin_right = 135.0
+margin_bottom = 97.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+meta_underlined = false
+text = "Hair"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Eyes" type="RichTextLabel" parent="."]
+margin_left = 183.0
+margin_top = 75.0
+margin_right = 207.0
+margin_bottom = 86.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+meta_underlined = false
+text = "Eyes"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ShirtText" type="RichTextLabel" parent="."]
+margin_left = 111.0
+margin_top = 100.0
+margin_right = 139.0
+margin_bottom = 112.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+meta_underlined = false
+text = "Shirt"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PantsText" type="RichTextLabel" parent="."]
+margin_left = 111.0
+margin_top = 113.0
+margin_right = 140.0
+margin_bottom = 124.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+meta_underlined = false
+text = "Pants"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ShoesText" type="RichTextLabel" parent="."]
+margin_left = 111.0
+margin_top = 126.0
+margin_right = 141.0
+margin_bottom = 136.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+meta_underlined = false
+text = "Shoes"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FacialText" type="RichTextLabel" parent="."]
+margin_left = 110.0
+margin_top = 139.0
+margin_right = 142.0
+margin_bottom = 149.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+meta_underlined = false
+text = "Facial"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AccText" type="RichTextLabel" parent="."]
+margin_left = 186.0
+margin_top = 87.0
+margin_right = 206.0
+margin_bottom = 98.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 1 )
+meta_underlined = false
+text = "Acc."
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HairColorText" type="RichTextLabel" parent="."]
+margin_left = 169.0
+margin_top = 101.0
+margin_right = 223.0
+margin_bottom = 111.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 20 )
+meta_underlined = false
+text = "Hair Color"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FacialHairColorText" type="RichTextLabel" parent="."]
+margin_left = 169.261
+margin_top = 114.0
+margin_right = 220.261
+margin_bottom = 125.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_fonts/normal_font = SubResource( 21 )
+meta_underlined = false
+text = "Fac. Color"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChangeHair2" type="Button" parent="."]
+margin_left = 97.0
+margin_top = 87.0
+margin_right = 112.0
+margin_bottom = 120.0
+rect_scale = Vector2( 0.772, 0.303 )
+custom_styles/focus = SubResource( 22 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChangeEyes2" type="Button" parent="."]
+margin_left = 169.0
+margin_top = 74.0
+margin_right = 217.0
+margin_bottom = 104.0
+rect_scale = Vector2( 0.251, 0.339 )
+custom_styles/focus = SubResource( 23 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChangeShirt2" type="Button" parent="."]
+margin_left = 97.0
+margin_top = 100.0
+margin_right = 127.0
+margin_bottom = 136.0
+rect_scale = Vector2( 0.398, 0.278 )
+custom_styles/focus = SubResource( 24 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChangePants2" type="Button" parent="."]
+margin_left = 97.0
+margin_top = 113.0
+margin_right = 110.0
+margin_bottom = 142.0
+rect_scale = Vector2( 0.946, 0.343 )
+custom_styles/focus = SubResource( 25 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChangeShoes2" type="Button" parent="."]
+margin_left = 97.0
+margin_top = 126.0
+margin_right = 109.0
+margin_bottom = 156.0
+rect_scale = Vector2( 0.939, 0.336 )
+custom_styles/focus = SubResource( 26 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChangeFacial2" type="Button" parent="."]
+margin_left = 97.0
+margin_top = 139.0
+margin_right = 111.0
+margin_bottom = 168.0
+rect_scale = Vector2( 0.871, 0.342 )
+custom_styles/focus = SubResource( 27 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChangeAcc2" type="Button" parent="."]
+margin_left = 170.0
+margin_top = 86.0
+margin_right = 185.0
+margin_bottom = 129.0
+rect_scale = Vector2( 0.783, 0.234 )
+custom_styles/focus = SubResource( 28 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HairArrow" type="Sprite" parent="."]
+position = Vector2( 143, 91 )
+scale = Vector2( 0.866667, 0.933333 )
+texture = ExtResource( 5 )
+
+[node name="EyeArrow" type="Sprite" parent="."]
+position = Vector2( 214, 78 )
+scale = Vector2( 0.866667, 0.933333 )
+texture = ExtResource( 5 )
+
+[node name="ShirtArrow" type="Sprite" parent="."]
+position = Vector2( 144, 104 )
+scale = Vector2( 0.866667, 0.933333 )
+texture = ExtResource( 5 )
+
+[node name="PantArrow" type="Sprite" parent="."]
+position = Vector2( 146, 117 )
+scale = Vector2( 0.866667, 0.933333 )
+texture = ExtResource( 5 )
+
+[node name="ShoesArrow" type="Sprite" parent="."]
+position = Vector2( 146, 130 )
+scale = Vector2( 0.866667, 0.933333 )
+texture = ExtResource( 5 )
+
+[node name="FacialArrow" type="Sprite" parent="."]
+position = Vector2( 148, 143 )
+scale = Vector2( 0.866667, 0.933333 )
+texture = ExtResource( 5 )
+
+[node name="AccArrow" type="Sprite" parent="."]
+position = Vector2( 214, 91 )
+scale = Vector2( 0.866667, 0.933333 )
+texture = ExtResource( 5 )
+
+[node name="SkinArrow" type="Sprite" parent="."]
+position = Vector2( 143, 78 )
+scale = Vector2( 0.866667, 0.933333 )
+texture = ExtResource( 5 )
+
+[node name="HairColorArrow" type="Sprite" parent="."]
+position = Vector2( 226, 105 )
+scale = Vector2( 0.866667, 0.933333 )
+texture = ExtResource( 5 )
+
+[node name="FacialColorArrow" type="Sprite" parent="."]
+position = Vector2( 226, 118 )
+scale = Vector2( 0.866667, 0.933333 )
+texture = ExtResource( 5 )
+
+[node name="RandomDice" type="Sprite" parent="."]
+position = Vector2( 103, 19 )
+scale = Vector2( 0.283333, 0.283333 )
+texture = ExtResource( 7 )
+
+[node name="SkinArrow2" type="Sprite" parent="."]
+position = Vector2( 102, 78 )
+scale = Vector2( 0.9, 0.933333 )
+texture = ExtResource( 6 )
+
+[node name="HairArrow2" type="Sprite" parent="."]
+position = Vector2( 102, 91 )
+scale = Vector2( 0.9, 0.933333 )
+texture = ExtResource( 6 )
+
+[node name="ShirtArrow2" type="Sprite" parent="."]
+position = Vector2( 102, 104 )
+scale = Vector2( 0.9, 0.933333 )
+texture = ExtResource( 6 )
+
+[node name="PantArrow2" type="Sprite" parent="."]
+position = Vector2( 102, 117 )
+scale = Vector2( 0.9, 0.933333 )
+texture = ExtResource( 6 )
+
+[node name="ShoeArrow2" type="Sprite" parent="."]
+position = Vector2( 102, 130 )
+scale = Vector2( 0.9, 0.933333 )
+texture = ExtResource( 6 )
+
+[node name="FacialArrow2" type="Sprite" parent="."]
+position = Vector2( 102, 143 )
+scale = Vector2( 0.9, 0.933333 )
+texture = ExtResource( 6 )
+
+[node name="EyesArrow2" type="Sprite" parent="."]
+position = Vector2( 174, 78 )
+scale = Vector2( 0.9, 0.933333 )
+texture = ExtResource( 6 )
+
+[node name="AccArrow2" type="Sprite" parent="."]
+position = Vector2( 175, 90 )
+scale = Vector2( 0.9, 0.933333 )
+texture = ExtResource( 6 )
+
+[node name="HairColorArrow2" type="Sprite" parent="."]
+position = Vector2( 160, 104 )
+scale = Vector2( 0.9, 0.933333 )
+texture = ExtResource( 6 )
+
+[node name="ChangeSkinColor" type="Button" parent="."]
+margin_left = 137.0
+margin_top = 74.0
+margin_right = 154.0
+margin_bottom = 108.0
+rect_scale = Vector2( 0.708, 0.286 )
+custom_styles/focus = SubResource( 29 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChangeHairColor" type="Button" parent="."]
+margin_left = 220.0
+margin_top = 101.0
+margin_right = 239.0
+margin_bottom = 132.0
+rect_scale = Vector2( 0.637, 0.322 )
+custom_styles/focus = SubResource( 30 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChangeFacialHairColor" type="Button" parent="."]
+margin_left = 220.0
+margin_top = 113.0
+margin_right = 239.0
+margin_bottom = 147.0
+rect_scale = Vector2( 0.637, 0.322 )
+custom_styles/focus = SubResource( 31 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="FacialColorArrow2" type="Sprite" parent="."]
+position = Vector2( 160, 117 )
+scale = Vector2( 0.9, 0.933333 )
+texture = ExtResource( 6 )
+
+[node name="ChangeSkinColor2" type="Button" parent="."]
+margin_left = 97.0
+margin_top = 74.0
+margin_right = 123.0
+margin_bottom = 105.0
+rect_scale = Vector2( 0.457, 0.322 )
+custom_styles/focus = SubResource( 32 )
+flat = true
+
+[node name="ChangeHairColor2" type="Button" parent="."]
+margin_left = 155.0
+margin_top = 100.0
+margin_right = 176.0
+margin_bottom = 140.0
+rect_scale = Vector2( 0.576, 0.248 )
+custom_styles/focus = SubResource( 33 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ChangeFacialHairColor2" type="Button" parent="."]
+margin_left = 155.0
+margin_top = 113.0
+margin_right = 183.0
+margin_bottom = 152.0
+rect_scale = Vector2( 0.435, 0.257 )
+custom_styles/focus = SubResource( 34 )
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="text_changed" from="Player/EnterName" to="Player" method="_on_EnterName_text_changed"]
+[connection signal="pressed" from="ChangeHair" to="Player" method="_on_ChangeHair_pressed"]
+[connection signal="pressed" from="ChangeEyes" to="Player" method="_on_ChangeEyes_pressed"]
+[connection signal="pressed" from="ChangeShirt" to="Player" method="_on_ChangeShirt_pressed"]
+[connection signal="pressed" from="ChangePants" to="Player" method="_on_ChangePants_pressed"]
+[connection signal="pressed" from="ChangeShoes" to="Player" method="_on_ChangeShoes_pressed"]
+[connection signal="pressed" from="ChangeFacHair" to="Player" method="_on_ChangeFacHair_pressed"]
+[connection signal="pressed" from="ChangeAcc" to="Player" method="_on_ChangeAcc_pressed"]
+[connection signal="pressed" from="RandomButton" to="Player" method="_on_RandomButton_pressed"]
+[connection signal="pressed" from="ConfirmButton" to="Player" method="_on_ConfirmButton_pressed"]
+[connection signal="pressed" from="Button" to="Player" method="_on_Button_pressed"]
+[connection signal="pressed" from="ChangeHair2" to="Player" method="_on_ChangeHair2_pressed"]
+[connection signal="pressed" from="ChangeEyes2" to="Player" method="_on_ChangeEyes2_pressed"]
+[connection signal="pressed" from="ChangeShirt2" to="Player" method="_on_ChangeShirt2_pressed"]
+[connection signal="pressed" from="ChangePants2" to="Player" method="_on_ChangePants2_pressed"]
+[connection signal="pressed" from="ChangeShoes2" to="Player" method="_on_ChangeShoes2_pressed"]
+[connection signal="pressed" from="ChangeFacial2" to="Player" method="_on_ChangeFacial2_pressed"]
+[connection signal="pressed" from="ChangeAcc2" to="Player" method="_on_ChangeAcc2_pressed"]
+[connection signal="pressed" from="ChangeSkinColor" to="Player" method="_on_ChangeSkinColor_pressed"]
+[connection signal="pressed" from="ChangeHairColor" to="Player" method="_on_ChangeHairColor_pressed"]
+[connection signal="pressed" from="ChangeFacialHairColor" to="Player" method="_on_ChangeFacialHairColor_pressed"]
+[connection signal="pressed" from="ChangeSkinColor2" to="Player" method="_on_ChangeSkinColor2_pressed"]
+[connection signal="pressed" from="ChangeHairColor2" to="Player" method="_on_ChangeHairColor2_pressed"]
+[connection signal="pressed" from="ChangeFacialHairColor2" to="Player" method="_on_ChangeFacialHairColor2_pressed"]

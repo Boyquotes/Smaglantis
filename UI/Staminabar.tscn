@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://UI/HealthbarOver.png" type="Texture" id=1]
+[ext_resource path="res://UI/StaminaBarUnder.png" type="Texture" id=2]
+[ext_resource path="res://UI/StaminabarProgress.png" type="Texture" id=3]
+[ext_resource path="res://UI/Staminabar.gd" type="Script" id=4]
+
+[node name="Staminabar" type="TextureProgress"]
+margin_right = 40.0
+margin_bottom = 40.0
+value = 100.0
+texture_under = ExtResource( 2 )
+texture_over = ExtResource( 1 )
+texture_progress = ExtResource( 3 )
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
