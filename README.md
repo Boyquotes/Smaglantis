@@ -6,7 +6,7 @@ Smaglantis is an indie open world, action/RPG game currently being developed in 
   <img src="Menu.gif"/>
 </p>
 
-## Creator Creator Menu
+## Character Creator Menu
 
 <p align="center">
   <img src="Character Creator.gif"/>
